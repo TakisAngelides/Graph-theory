@@ -27,12 +27,12 @@ def get_neighbours():
         diagonal_down_right = i + L + 2
         neighbours[i] = [up_right, up_left, down_right, down_left,
                          diagonal_up_left, diagonal_up_right, diagonal_down_left, diagonal_down_right]
-    # Logic hell
+    # Logic hell - provides a dictionary of neighbours for each site - not necessary for program 
     for i in range(N):
         next_line = []
         next_next_line = []
         for j in range(len(neighbours[i])):
-            if abs(int(neighbours[i][j]/5) - int(i/5)) == 1:
+            if abs(int(neighbours[i][j]/L) - int(i/L)) == 1:
                 next_line.append(neighbours[i][j])
             else:
                 next_next_line.append(neighbours[i][j])
