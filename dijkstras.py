@@ -2,7 +2,7 @@ import networkx as nx # used for drawing the graph as a plot
 import numpy as np
 import matplotlib.pyplot as plt
 
-G_1 = [[0, 0, 0, 0], [0, 0, 0, 13], [0, 7, 0, 6], [0, 0, 0, 0]] # graph is represented by a matrix where row is starting node of edge and column is finishing node of edge
+G_1 = [[0, 9, 0, 0], [0, 0, 0, 13], [0, 7, 0, 6], [0, 0, 0, 0]] # graph is represented by a matrix where row is starting node of edge and column is finishing node of edge
 N = 4
 G_2 = np.random.rand(N, N)*10
 G_2 = np.around(G_2, decimals = 1)
